@@ -1,0 +1,27 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+/* Import tech-focused Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+/* Custom Styles */
+.font-space-grotesk {
+  font-family: 'Space Grotesk', monospace;
+}
+.font-jetbrains {
+  font-family: 'JetBrains Mono', monospace;
+}
+.font-ibm-plex-mono {
+  font-family: 'IBM Plex Mono', monospace;
+}
+.text-gradient {
+  background: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card-3d {
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+  transition: transform 0.3s ease;
+}
+.card-3d:hover {
+  transform: perspective(1000px) rotateX(5deg) rotateY(5deg);
+}
